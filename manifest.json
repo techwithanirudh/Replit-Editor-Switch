@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Replit Editor Switch",
+  "version": "0.0.2",
+
+  "description": "Adds an option for Replit to change editors between codemirror and monaco",
+  "homepage_url": "https://techwithanirudh.tech/replit-editor-switch",
+  "icons": {
+    "48": "icons/video.svg"
+  },
+
+  "permissions": ["*://*.replit.com/*", "activeTab"],
+
+  "browser_action": {
+    "default_icon": {
+      "32": "icons/video.svg"
+    },
+    "default_title": "Replit Editor Switch",
+    "default_popup": "popup/content-script.html",
+    "browser_style": true
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
